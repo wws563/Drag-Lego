@@ -74,8 +74,8 @@ export default defineComponent({
       ])
     const dropList:interTestData[] = reactive([])
     // 实现拖拽功能
-    // const activedDragItem:Ref<interTestData> = ref({id:"",text:""}) // 疑问？ 如何初始化为空
-    const activedDragItem:Ref<interTestData> = ref({id:'',text:''}) // 
+    // const activedDragItem:Ref<interTestData> = ref({id:"",text:""}) // 疑问?如何初始化为空
+    const activedDragItem:Ref<interTestData> = ref({id:'',text:''}) // 临时解决方案:赋值初始值
     const isDrapOver:Ref<boolean> = ref(false)
     const activedDropItemId:Ref<string> = ref('-1')
 
