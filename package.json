@@ -1,0 +1,50 @@
+{
+  "name": "drag-lego",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint"
+  },
+  "dependencies": {
+    "-": "0.0.1",
+    "@types/lodash.debounce": "^4.0.6",
+    "@types/lodash.throttle": "^4.1.6",
+    "@types/marked": "^4.0.1",
+    "@varlet/touch-emulator": "^1.0.1",
+    "@varlet/ui": "^1.23.11",
+    "core-js": "^3.6.5",
+    "d": "^1.0.1",
+    "github-markdown-css": "^5.1.0",
+    "highlight.js": "^11.4.0",
+    "html-loader": "^3.1.0",
+    "lodash.throttle": "^4.1.1",
+    "markdown-it-vue": "^1.1.6",
+    "markdown-loader": "^6.0.0",
+    "marked": "^4.0.10",
+    "text-loader": "0.0.1",
+    "vue": "^3.0.0",
+    "vue-markdown": "^2.2.4",
+    "vue-router": "^4.0.12"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^4.18.0",
+    "@typescript-eslint/parser": "^4.18.0",
+    "@vue/cli-plugin-babel": "~4.5.0",
+    "@vue/cli-plugin-eslint": "~4.5.0",
+    "@vue/cli-plugin-typescript": "~4.5.0",
+    "@vue/cli-service": "~4.5.0",
+    "@vue/compiler-sfc": "^3.0.0",
+    "@vue/eslint-config-typescript": "^7.0.0",
+    "eslint": "^6.7.2",
+    "eslint-plugin-vue": "^7.0.0",
+    "sass": "^1.26.5",
+    "sass-loader": "^8.0.2",
+    "typescript": "~4.1.5",
+    "unplugin-vue-components": "^0.17.9",
+    "vue-loader": "^15.9.8",
+    "vue-markdown-loader": "^2.5.0",
+    "vue-template-compiler": "^2.6.14"
+  }
+}
