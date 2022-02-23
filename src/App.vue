@@ -1,50 +1,28 @@
 <template>
   <div>
-    <var-tabs
-      class="vertical-tabs"
-      elevation
-      color="#2979ff"
-      active-color="#fff"
-      inactive-color="hsla(0, 0%, 100%, .6)"
-      v-model:active="active"
-    >
-      <var-tab>从一个容器移动到另一个容器</var-tab>
-      <var-tab>从一个容器移动到另一个容器（bySetup）</var-tab>
-      <var-tab>选项3</var-tab>
-    </var-tabs>
-    <var-tabs-items
-      class="tab-item-continer"
-      :can-swipe="false"
-      v-model:active="active"
-    >
-      <var-tab-item>
-        <DragAndDorp />
-      </var-tab-item>
-      <var-tab-item>
-        <DragAndDorpBySetup />
-      </var-tab-item>
-      <var-tab-item> 3 </var-tab-item>
-    </var-tabs-items>
+    <div>
+      <router-link to="/">Go to Home</router-link>
+      <router-link to="/demo">Go to demo</router-link>
+    </div>   
+    <div v-for="(item,index) in router" :key="index">{{item.name}}</div>
+    <router-view></router-view>
   </div>
 </template>
 
 <script lang="ts">
 import { defineComponent } from "vue";
-import DragAndDorp from "./views/demo/DragAndDorp.vue";
-import DragAndDorpBySetup from "./views/demo/DragAndDorpBySetup.vue";
+import router from './router';
 
 export default defineComponent({
   name: "App",
   data: () => {
     return {
       active: 0,
+      router: router.getRoutes()
     };
-  },
-  components: {
-    DragAndDorp,
-    DragAndDorpBySetup,
-  },
+  }
 });
+
 </script>
 
 <style lang="scss">

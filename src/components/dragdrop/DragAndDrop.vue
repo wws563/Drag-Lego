@@ -32,7 +32,7 @@
       >
         <div v-for="item in dropList" :key="item.id" class="item drop-item"
           @mouseenter="activedDropItemId = item.id"
-          @mouseleave="activedDropItemId = null"
+          @mouseleave="activedDropItemId = '0'"
         >
           <!--关键点—— @mouseout="activedDropItemId = null"mouseleave  
           和 mouseout (en-US) 是相似的，但是两者的不同在于mouseleave 不会冒泡而mouseout 会冒泡。
@@ -70,7 +70,7 @@ export default defineComponent({
     return {
       isDrapActived: false,
       activedItem: {} as interTestData,
-      activedDropItemId:null,
+      activedDropItemId:"0",
       dragList: [
         { id: "1", text: "foo" },
         { id: "2", text: "bar" },
@@ -82,7 +82,7 @@ export default defineComponent({
     //HelloWorld
   },
   methods: {
-    onDragStart(item: any) {
+    onDragStart(item: interTestData) {
       this.activedItem = item;
     },
     onDragEnd() {

@@ -33,7 +33,6 @@
 1. js的拖拽api在ondragover时需要阻止默认行为（因为默认不让drop），之后才能让ondrop事件正常触发。
 2. drop-item的容器在拖入内容（即ondragenter）时，需要给所有子元素增加css——pointer-events:none以禁用内部元素的鼠标事件，避免子元素触发ondragleave事件。该css在ondragleave触发时去除。
 3. 生成的dist无法直接部署。[解决办法](https://www.jianshu.com/p/597626a6cb83)
-4. [识别md文件并展示](https://segmentfault.com/a/1190000040585691)
 
 ##### 参考文章
 [Drag&Drop 拖放API简介以及在React中的实践](https://juejin.cn/post/6844903849115779086)
