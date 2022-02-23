@@ -1,4 +1,3 @@
-
 # Drag-Lego
 >拖拽生成页面的一个Demo，像乐高一样拼搭，起名Drag-Lego
 

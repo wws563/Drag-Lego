@@ -4,7 +4,7 @@
       <router-link to="/">Go to Home</router-link>
       <router-link to="/demo">Go to demo</router-link>
     </div>   
-    <div v-for="(item,index) in router" :key="index">{{item.name}}</div>
+    <!-- <div v-for="(item,index) in router" :key="index">{{item.name}}</div> -->
     <router-view></router-view>
   </div>
 </template>
